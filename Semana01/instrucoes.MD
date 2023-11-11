@@ -22,8 +22,10 @@ de aula com seus respectivos links.
 
 4. Utilize as tags HTML aprendidas em sala para formatar o seu conteúdo (`<p>, 
 <h1>a<h6>, <hr/>, <br/>, <ul>, <ol>, <a>, <img>`, etc);
+
 5. Teste seu site em pelo menos dois navegadores web para verificar se está tudo 
 correto;
+
 6. Publique seu site no repositório github (https://github.com/) e disponibilize o 
 endereço.
 **Observações: Use apenas HTML para criar seu website mesmo que você tenha 
