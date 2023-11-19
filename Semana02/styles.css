@@ -75,7 +75,7 @@ body {
 h2 {
   margin-bottom: 10px;
   font-size: 24px;
-  color: white;
+  color: black;
 }
 
 ul {
@@ -103,4 +103,8 @@ a {
 a:hover {
   background-color: #0044ff;
   color: #fff;
+}
+img {
+  width: 100px;
+  height: 100px;
 }
