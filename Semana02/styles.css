@@ -1,13 +1,11 @@
-/* Estilos modernos para um site de universidade */
 
-/* Reset de estilos */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Cores e fontes */
+
 body {
   font-family: 'Lato', sans-serif;
   background-color: #f8f8f8;
@@ -107,4 +105,13 @@ a:hover {
 img {
   width: 100px;
   height: 100px;
+}
+footer {
+  background-color: #fff;
+  color: #333;
+  padding: 20px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold; 
+  border-top: 1px solid #ccc;
 }
