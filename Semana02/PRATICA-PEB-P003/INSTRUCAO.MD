@@ -1,6 +1,6 @@
 # INSTRUÇÃO PRÁTICA  |  FEB-P003
 
->** Desenvolver um design para uma página da web utilizando a linguagem CSS, incluindo o Flexbox. Aplicar as propriedades e técnicas da linguagem CSS e layouts complexos e flexíveis que foram vistas em sala de aula**.
+>Desenvolver um design para uma página da web utilizando a linguagem CSS, incluindo o Flexbox. Aplicar as propriedades e técnicas da linguagem CSS e layouts complexos e flexíveis que foram vistas em sala de aula.
 <hr>
 Criação de um design para ser utilizado por uma agência de turismo. A tarefa consiste em criar uma classe de destinos, na qual deve incluir: o nome do destino, a imagem principal do destino, o que está incluso no pacote, o preço e se as taxas estão inclusas ou não, a forma de pagamento e por fim o botão de comprar.
 <hr>
