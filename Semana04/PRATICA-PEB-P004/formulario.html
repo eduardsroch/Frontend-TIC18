@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Adicionar Roteiro Turístico</title>
+    <link rel="stylesheet" href="formulario.css">
+</head>
+<h1>ROTEIRO TURÍSTICO</h1>
+<body>
+    <form id="formulario">
+        <label for="titulo">Destino:</label>
+        <input type="text" id="titulo" name="titulo"><br>
+
+        <label for="inclusos">Inclusos:</label>
+        <textarea id="inclusos" name="inclusos"></textarea><br>
+
+        <label for="preco">Preço:</label>
+        <input type="text" id="preco" name="preco"><br>
+
+        <label for="observacoes">Observações:</label>
+        <textarea id="observacoes" name="observacoes"></textarea><br>
+
+        <label for="parcelamento">Parcelamento:</label>
+        <input type="text" id="parcelamento" name="parcelamento"><br>
+
+        <label for="imagem">URL da Imagem:</label>
+        <input type="text" id="imagem" name="imagem"><br>
+
+        <button type="button" onclick="inserirRoteiro()">Inserir</button>
+    </form>
+    <hr>
+
+    <div class="container-destinos" id="container-destinos">
+    </div>
+
+    <script src="comprar.js"></script>
+</body>
+</html>
