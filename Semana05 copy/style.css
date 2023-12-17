@@ -12,7 +12,7 @@ html, body {
     margin: 0 auto;
     padding: 0;
     background-color: #f8f8f8;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0);
 }
 
 img {
@@ -178,12 +178,14 @@ h2 {
         margin: 0;
     }
 }
+/* FILEPATH: /C:/Users/edu__/OneDrive/Documentos/GitHub/Frontend-TIC18/Semana05 copy/style.css */
 
+/* Regular menu styles */
 #menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #f2f2f2;
+    background-color: #0078d4;
     padding: 10px;
     border-radius: 5px;
 }
@@ -191,15 +193,73 @@ h2 {
 #menu li {
     list-style-type: none;
     margin-right: 10px;
-    display: inline-block; /* Added this line */
+    display: inline-block;
 }
 
 #menu a {
     text-decoration: none;
-    color: #333;
+    color: #fff;
     font-weight: bold;
 }
 
 #menu a:hover {
-    color: #0078d4;
+    color: #0c0000;
 }
+
+
+#menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0078d4;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+#menu li {
+    list-style-type: none;
+    margin-right: 10px;
+    display: inline-block;
+}
+
+#menu a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+#menu a:hover {
+    color: #0c0000;
+}
+
+@media (max-width: 768px) {
+    #menu {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #menu li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    #menu a {
+        display: block;
+    }
+
+
+    #menu .hamburger-icon {
+        display: block;
+        width: 30px;
+        height: 2px;
+        background-color: #fff;
+        margin-bottom: 5px;
+        transition: transform 0.3s ease;
+    }
+
+    #menu .hamburger-icon:hover {
+        transform: scale(1.2);
+    }
+}
+
