@@ -1,0 +1,12 @@
+<!-- cart.component.html -->
+
+<div class="card">
+    <div *ngIf="selectedVehicle">
+      <div class="card-item">{{ selectedVehicle.Name }}</div>
+      <!-- Outras propriedades -->
+    </div>
+    <div *ngIf="!selectedVehicle">
+      Nenhum veículo selecionado
+    </div>
+  </div>
+  

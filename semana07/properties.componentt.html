@@ -1,0 +1,8 @@
+<!-- properties.component.html -->
+
+<div *ngFor="let property of Object.keys(selectedObject)">
+    <div (click)="onSelectProperty(property)">
+      {{ property }}
+    </div>
+  </div>
+  

@@ -1,0 +1,8 @@
+<!-- objects.component.html -->
+
+<div *ngFor="let vehicle of vehicles[selectedCategory]">
+    <div (click)="onSelectObject(vehicle)">
+      {{ vehicle.Name }}
+    </div>
+  </div>
+  
