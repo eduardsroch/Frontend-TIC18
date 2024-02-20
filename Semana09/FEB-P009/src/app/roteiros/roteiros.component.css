@@ -1,0 +1,83 @@
+body{
+    font-family: 'Hedvig Letters Serif', serif;
+    background-color: #FFF;
+  }
+  
+  .container-destinos{
+    display: flex;
+    gap: 30px;
+  }
+  
+  .roteiros-viagens{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #e5d4ff;
+    max-width: 200px;
+    flex-grow: 1;
+  }
+  
+  .roteiros-viagens img{
+    width: 150px;
+    height: 100px;
+    border-radius: 5px;
+  }
+  
+  .roteiro-destino{
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #620fce;
+    margin: 10px 0;
+  }
+  
+  .roteiro-incluso{
+    font-size: 1rem;
+    color: #620fce;
+    margin: 10px 0;
+  }
+  
+  .roteiro-preco{
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #620fce;
+    margin-top: 10px;
+  }
+  
+  .roteiro-obs{
+    font-size: 0.7rem;
+    color: #020202;
+  }
+  
+  .roteiro-parcelamento{
+    font-size: 0.7rem;
+    color: #000000;
+  }
+  
+  .roteiro-comprar{
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #FFF;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #84e60d;
+  }
+  
+  .roteiro-comprar:hover{
+    background-color: #84e60d;
+    cursor: pointer;
+  }
+  
+  ul{
+    list-style: none;
+    padding: 0;
+  }
+  
+  @media (max-width: 1200px){
+    .container-destinos{
+        flex-direction: column;
+    }
+  }

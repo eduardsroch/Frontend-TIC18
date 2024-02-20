@@ -1,0 +1,88 @@
+.divisao1 {
+    font-family: 'Hedvig Letters Serif', serif;
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 20%;
+    grid-gap: 10px;
+    border: 1px solid #000;
+}
+
+.divisao2{
+    font-family: 'Hedvig Letters Serif', serif;
+    display: grid;
+    grid-template-columns: 1fr 400px;
+    grid-gap: 5px;  
+    margin-top: 5px;
+}
+header {
+    font-family: 'Hedvig Letters Serif', serif;
+    background-color: bisque;
+    padding: 20px;
+    margin-top: 10px;
+    text-align: center;
+    border: 1px solid #000;
+    color: rgb(1, 1, 1);
+}
+
+footer {
+    background-color: bisque;
+    padding: 20px;
+    margin-top: 12px;
+    text-align: center;
+    border: 1px solid #000;
+    color: rgba(5, 5, 5, 0.901);
+}
+
+.box{
+    border: 1px solid #000;
+    
+    
+}
+
+.destaque{
+    display: grid;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    row-gap: 10px;
+}
+.cabeçalho {
+    font-size: 20px;
+    font-weight: bold;
+    color: #000;
+    border: 1px solid #000;
+}
+.imagens{
+    display: grid;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    row-gap: 10px;
+}
+
+section{
+    background-color: #fff;
+    border: 1px solid #000;
+    overflow: auto;
+}
+
+@media (max-width: 500px) {
+    .divisao1 {
+        grid-template-columns: 1fr;
+    }
+
+    .divisao2 {
+        grid-template-columns: 1fr;
+    }
+
+    header {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    footer {
+        width: 100%;
+        box-sizing: border-box;
+        margin-bottom: auto;
+    }
+}

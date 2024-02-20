@@ -1,0 +1,10 @@
+<input type="file" id="arqv" (change)="getArquivo()">
+<div class="container">
+    <app-classes [categorias] = "categorias" (categoriaSelecionada) = "salvarCategoria($event)"></app-classes>
+    <app-objetos [veiculos] = "veiculos" (veiculoSelecionado) = salvarVeiculo($event)></app-objetos>
+    <app-propriedades [propriedades] = "propriedades" (propriedadeSelecionada) = salvarPropriedade($event)></app-propriedades>
+    <app-valor-propriedade [valor] = "valor" ></app-valor-propriedade>   
+</div>
+<button (click)="salvar()" id="add" disabled>Adicionar</button>  
+<app-carrinho [salvos] = "salvos"></app-carrinho>
+

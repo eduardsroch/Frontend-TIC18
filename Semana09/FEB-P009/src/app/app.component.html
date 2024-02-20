@@ -1,0 +1,8 @@
+<nav mat-tab-nav-bar [tabPanel]="tabPanel">
+  <a mat-tab-link (click) = "navigate('jreader')" routerLinkActive="active-link" label="Second"> jReader </a>
+  <a mat-tab-link (click) = "navigate('roteiros')" routerLinkActive="active-link" label="Third"> Roteiros </a>
+  <a mat-tab-link (click) = "navigate('siteuesc')" routerLinkActive="active-link" label="Third"> Siteuesc </a>
+</nav>
+<mat-tab-nav-panel #tabPanel>
+  <router-outlet></router-outlet>
+</mat-tab-nav-panel>

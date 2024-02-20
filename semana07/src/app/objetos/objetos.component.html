@@ -1,0 +1,5 @@
+<button id="Nome">Veículos</button>
+<div *ngFor="let vei of veiculos">
+    <button (click) = "selecionado(vei)" appMudaCorVeiculos>{{vei["Name"]}}</button>
+</div>
+

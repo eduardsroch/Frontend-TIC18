@@ -1,0 +1,4 @@
+<button id="Nome">Categorias</button>
+<div *ngFor="let cat of categorias">
+    <button (click) = "selecionado(cat)" appMudaCorCategoria>{{cat}}</button>
+</div>
