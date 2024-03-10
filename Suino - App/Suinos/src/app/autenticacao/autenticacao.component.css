@@ -1,0 +1,53 @@
+.loginimg {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background: linear-gradient(to bottom,#fdf0e5,#fdf0e5, #ffffff, #ffffff); 
+    background-size: cover;
+    height: 100%;
+}
+
+.container {
+    display: flex;
+    height: 50%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+}
+
+.conteudo-login {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.card-login {
+    width: 500px;
+    padding: 20px;
+}
+
+.form-field-full {
+    width: 100%;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+.align-right {
+    margin-left: auto;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: 160px;
+    height: 160px;
+    margin-top: 30px;
+}

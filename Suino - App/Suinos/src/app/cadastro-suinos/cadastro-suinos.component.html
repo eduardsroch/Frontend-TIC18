@@ -1,0 +1,97 @@
+<div class="botoesNav">
+    <button mat-flat-button class="listagemSuino" title="Clique aqui para ver a listagem de suínos cadastrados" routerLink="/listar-suinos" routerLinkActive="active">LISTAGEM DE SUÍNOS</button>
+    <button mat-flat-button class="controlePeso" title="Clique aqui para acessar o controle de peso dos suínos">CONTROLE DE PESO (adicionar link)</button>
+    <button mat-flat-button class="cadastroPeso" title="Clique aqui para cadastrar um novo peso de suíno">CADASTRO DE PESO (adicionar link)</button>
+    <button mat-flat-button class="edicaoPeso" title="Clique aqui para editar o peso de um suíno cadastrado">EDIÇÃO DE PESO (adicionar link)</button>
+</div>
+<mat-card-content class="conteiner">
+<mat-card class="card-cadastro">
+
+<mat-card-title class="title">
+    Cadastro de Suínos
+</mat-card-title>
+
+<form [formGroup]="formSuinos" (ngSubmit)="adicionarBilhete()" class="form-container">
+<mat-card-content>
+    <div *ngIf="formularioInvalido" class="error-message">
+        <mat-error>
+            O formulário contém erros. Por favor, corrija-os antes de enviar.
+        </mat-error>  
+    </div>
+
+    <div class="form-group">
+    <mat-form-field appearance="outline" class="form-field-full">
+        <mat-label for="brincoAnimal">Brinco do animal:</mat-label>
+        <input matInput formControlName="brincoAnimal" id="brincoAnimal" name="brincoAnimal" class="form-control"> 
+        <mat-error class="error-message" *ngIf=" !formSuinos.get('brincoAnimal')?.valid && formSuinos.get('brincoAnimal')?.touched">
+            Brinco do animal não deve ser nulo e deve conter somente números.
+        </mat-error>
+    </mat-form-field>
+    </div>
+
+    <div class="form-group">
+    <mat-form-field appearance="outline" class="form-field-full">
+        <mat-label for="brincoPai">Brinco do pai:</mat-label>
+        <input matInput type="text" id="brincoPai" formControlName="brincoPai" class="form-control">
+        <mat-error class="error-message" *ngIf=" !formSuinos.get('brincoPai')?.valid && formSuinos.get('brincoPai')?.touched">
+            Brinco do pai não deve ser nulo e deve conter somente números.
+        </mat-error>
+    </mat-form-field>
+    </div>
+
+    <div class="form-group">  
+    <mat-form-field appearance="outline" class="form-field-full">
+        <mat-label for="brincoMae">Brinco da mãe:</mat-label>
+        <input matInput type="text" id="brincoMae" name="brincoMae" formControlName="brincoMae" class="form-control">
+        <mat-error class="error-message" *ngIf="!formSuinos.get('brincoMae')?.valid && formSuinos.get('brincoMae')?.touched">
+        Brinco da mãe não deve ser nulo e deve conter somente números.
+        </mat-error>
+    </mat-form-field>
+    </div>
+
+    <div class="form-group"> 
+        <mat-form-field appearance="outline" class="form-field-full">
+            <mat-label for="dataNascimento">Data de nascimento:</mat-label>
+            <input matInput formControlName="dataNascimento" id="dataNascimento" name="dataNascimento" type="date" class="form-control"> 
+        </mat-form-field> 
+        </div>
+
+
+    <div class="form-group">  
+    <mat-form-field appearance="outline" class="form-field-full">
+        <mat-label for="dataSaida">Data da saída:</mat-label>
+        <input matInput formControlName="dataSaida" id="dataSaida" name="dataSaida" type="date" class="form-control"> 
+        <mat-error class="error-message" *ngIf="!formSuinos.get('dataSaida')?.valid && formSuinos.get('dataSaida')?.touched">
+            Insira dia mês e ano.
+        </mat-error>
+    </mat-form-field>
+    </div>
+
+    <div class="form-group"> 
+    <mat-form-field appearance="outline" class="form-field-full">
+        <mat-label for="status">Status:</mat-label>
+        <mat-select id="status" formControlName="status">
+            <mat-option value="ativo">Ativo</mat-option>
+            <mat-option value="vendido">Vendido</mat-option>
+            <mat-option value="morto">Morto</mat-option>
+        </mat-select> 
+    </mat-form-field>
+    </div> 
+
+
+    <div class="form-group"> 
+    <mat-form-field appearance="outline" class="form-field-full">
+    <mat-label for="sexo">Sexo do animal:</mat-label>
+    <mat-select id="sexo" formControlName="sexo">
+        <mat-option value="feminino">Feminino</mat-option>
+        <mat-option value="masculino">Masculino</mat-option>
+    </mat-select> 
+    </mat-form-field>
+    </div> 
+
+
+    <button mat-raised-button class="enviar" type="submit">Enviar</button>   
+</mat-card-content>
+</form>
+</mat-card> 
+</mat-card-content>

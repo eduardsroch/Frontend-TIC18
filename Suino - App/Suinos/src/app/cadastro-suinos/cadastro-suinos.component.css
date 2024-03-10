@@ -1,0 +1,63 @@
+.botoesNav {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    transition: transform 0.3s;
+}
+
+.botoesNav button:hover {
+    transform: scale(1.1);
+    background-color: #feab8d;
+}
+
+.botoesNav button {
+    background-color: #d7b89c;
+    margin-bottom: 40px;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteiner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.card-cadastro {
+    width: 80%;
+    max-width: 400px;
+}
+
+.form-container {
+    width: 100%;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-field-full {
+    width: 100%;
+}
+
+.error-message {
+    color: red;
+}
+
+.enviar {
+    transition: transform 0.3s;
+    background-color: #d7b89c;
+}
+
+.enviar:hover {
+    background-color: #feab8d;
+    transform: scale(1.1);
+}
