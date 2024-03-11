@@ -40,15 +40,16 @@ export class CadastroSuinosComponent implements OnInit{
       dataSaida: this.formSuinos.get('dataSaida')?.value,
       status: this.formSuinos.get('status')?.value,
       sexo: this.formSuinos.get('sexo')?.value,
+      pesos: [{ dataDaPesagem: '', peso: 0 }]
     };
   
     console.log(cadastroData);
     this.bancoService.addCadastroSuinos(cadastroData);
     this.formSuinos.reset();
-    this.formularioInvalido = false; 
-    } else {
-      this.formularioInvalido = true; 
-    }
+    this.formularioInvalido = this.formSuinos.valid; // Atualiza a variável de acordo com o estado atual do formulário
+  } else {
+    this.formularioInvalido = true; 
+  }
   }
 
 

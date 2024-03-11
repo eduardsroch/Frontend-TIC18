@@ -1,27 +1,20 @@
-# Suinos
+Tutorial de Uso - Controle de Suínos na Fazenda
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.7.
+Bem-vindo(a) ao sistema de controle de suínos! Este tutorial breve irá ajudá-lo(a) a navegar pelas funcionalidades da aplicação:
 
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Cadastro de Suíno:
+    Acesse a opção “Cadastro de Suíno” no menu.
+    Preencha os campos obrigatórios, como o brinco do animal, brinco do pai, brinco da mãe, data de nascimento, data de saída, status e sexo.
+    Clique em “Salvar” para cadastrar o suíno.
+Listagem de Suínos:
+    No menu, selecione “Listagem de Suínos”.
+    Utilize os filtros para encontrar os suínos desejados.
+    Visualize os detalhes dos animais, incluindo a idade calculada em meses.
+    Edite ou exclua os suínos conforme necessário.
+Controle de Peso:
+    Acesse “Controle de Peso” no menu.
+    Veja o gráfico com as datas de pesagem e os pesos dos animais.
+Cadastro de Peso:
+    Na opção “Cadastro de Peso”, informe o brinco do animal.
+    Insira a data da pesagem e o peso em kg.
+    Clique em “Salvar”.

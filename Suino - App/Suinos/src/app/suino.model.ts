@@ -7,4 +7,5 @@ export interface Suinos {
     status: string;
     sexo: string;
     id?: string;
+    pesos?: { dataDaPesagem: string, peso: number }[];
 }

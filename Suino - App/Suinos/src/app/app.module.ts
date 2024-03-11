@@ -27,6 +27,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatTableModule } from '@angular/material/table';
 import {MatDividerModule} from '@angular/material/divider';
 import { AutenticaInterceptor } from './autentica.interceptor';
+import { CadastroPesosComponent } from './cadastro-pesos/cadastro-pesos.component';
+import { ControlePesosComponent } from './controle-pesos/controle-pesos.component';
+import { EditarPesosComponent } from './editar-pesos/editar-pesos.component';
 
 
 const routes: Routes = [
@@ -34,6 +37,9 @@ const routes: Routes = [
   { path: 'cadastro-suinos', component: CadastroSuinosComponent },
   { path: 'listar-suinos', component: ListarSuinosComponent },
   { path: 'editarCadastro/:id', component: EditarComponent },
+  { path: 'cadastro-pesos', component: CadastroPesosComponent },
+  { path: 'controle-pesos', component: ControlePesosComponent },
+  { path: 'editar-pesos', component: EditarPesosComponent },
   { path: '', redirectTo: '/login', pathMatch: 'full' },
   { path: 'login', component: AutenticacaoComponent }
 ];
@@ -47,7 +53,10 @@ const routes: Routes = [
     EditarComponent,
     IdadePipe,
     AutenticacaoComponent,
-    LoadingSpinnerComponent
+    LoadingSpinnerComponent,
+    CadastroPesosComponent,
+    ControlePesosComponent,
+    EditarPesosComponent
   ],
   imports: [
     BrowserModule,

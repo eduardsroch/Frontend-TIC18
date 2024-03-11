@@ -101,10 +101,9 @@ img {
 
 .card-cadastro {
     width: 90%;
-    max-width: 500px;
+    max-width: 800px;
     background-color: #fff;
     border-radius: 20px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
     padding: 20px;
 }
 
@@ -115,7 +114,7 @@ img {
 .form-field-full {
     width: 100%;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #009d3a;
     border-radius: 5px;
     font-size: 16px;
 }
@@ -125,7 +124,7 @@ img {
 }
 
 .enviar {
-    background-color: #556b2f;
+    background-color: #125133;
     border: none;
     border-radius: 10px;
     padding: 10px 20px;

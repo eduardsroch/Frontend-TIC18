@@ -18,7 +18,7 @@
             <mat-label for="brincoAnimal">Brinco do animal:</mat-label>
             <input matInput formControlName="brincoAnimal" id="brincoAnimal" name="brincoAnimal" class="form-control"> 
             <mat-error class="error-message" *ngIf=" !formSuinos.get('brincoAnimal')?.valid && formSuinos.get('brincoAnimal')?.touched">
-                Brinco do animal não deve ser nulo e deve conter somente números.
+                Brinco do animal não deve ser nulo.
             </mat-error>
         </mat-form-field>
         </div>
@@ -28,7 +28,7 @@
             <mat-label for="brincoPai">Brinco do pai:</mat-label>
             <input matInput type="text" id="brincoPai" formControlName="brincoPai" class="form-control">
             <mat-error class="error-message" *ngIf=" !formSuinos.get('brincoPai')?.valid && formSuinos.get('brincoPai')?.touched">
-                Brinco do pai não deve ser nulo e deve conter somente números.
+                Brinco do pai não deve ser nulo.
             </mat-error>
         </mat-form-field>
         </div>
@@ -38,7 +38,7 @@
             <mat-label for="brincoMae">Brinco da mãe:</mat-label>
             <input matInput type="text" id="brincoMae" name="brincoMae" formControlName="brincoMae" class="form-control">
             <mat-error class="error-message" *ngIf="!formSuinos.get('brincoMae')?.valid && formSuinos.get('brincoMae')?.touched">
-            Brinco da mãe não deve ser nulo e deve conter somente números.
+            Brinco da mãe não deve ser nulo.
             </mat-error>
         </mat-form-field>
         </div>

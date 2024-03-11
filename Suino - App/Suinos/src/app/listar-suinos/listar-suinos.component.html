@@ -1,42 +1,38 @@
-<link rel="stylesheet" href="listar-suinos.component.css">
 <div *ngIf="loadedSuino.length < 1">
+  
 </div>
 
 <div class="filtros">
   <mat-card-content>
     <mat-card-title>
-      <h2 id="filtro">Filtros</h2>
+      <h1 id="filtro">LISTAGEM DE SUÍNOS</h1>
     </mat-card-title>
-    <br>
     <mat-card>
+      <img src="assets\porco.png" alt="">
       <div class="filter-row">
         <mat-form-field class="form-field-half">
           <mat-label for="filtroBrincoPai">Filtrar por brinco do pai:</mat-label>
           <input matInput type="text" id="filtroBrincoPai" [(ngModel)]="filtroBrincoPai" (change)="aplicarFiltro()">
         </mat-form-field>
-        <br>
-        <br>
+
         <mat-form-field class="form-field-half">
           <mat-label for="filtroBrincoMae">Filtrar por brinco da mãe:</mat-label>
           <input matInput type="text" id="filtroBrincoMae" [(ngModel)]="filtroBrincoMae" (change)="aplicarFiltro()">
         </mat-form-field>
       </div>
-      <br>
-      <br>
+
       <div class="filter-row">
         <mat-form-field class="form-field-half">
           <mat-label for="filtroDataNascimento">Filtrar por data de nascimento:</mat-label>
           <input matInput type="date" id="filtroDataNascimento" [(ngModel)]="filtroDataNascimento" (change)="aplicarFiltro()">
         </mat-form-field>
-        <br>
-        <br>
+
         <mat-form-field class="form-field-half">
           <mat-label for="filtroDataSaida">Filtrar por data de saída:</mat-label>
           <input matInput type="date" id="filtroDataSaida" [(ngModel)]="filtroDataSaida" (change)="aplicarFiltro()">
         </mat-form-field>
       </div>
-      <br>
-      <br>
+
       <div class="filter-row">
         <mat-form-field class="form-field-half">
           <mat-label for="filtroSexo">Filtrar por sexo:</mat-label>
@@ -57,7 +53,7 @@
 
 <mat-card-content>
   <mat-card-title>
-    <h1 id="ListaS">Lista de Suínos Cadastrados</h1>
+    Lista de Suínos Cadastrados
   </mat-card-title>
   <mat-card>
 
@@ -87,7 +83,7 @@
       <td>{{ suino.sexo }}</td>
       <td>{{ suino.dataNascimento | calcularIdade }}</td>
       <td>
-        <button mat-flat-button type="button" class="btnEditar" [routerLink]="['/editar', suino.id]">Editar</button>
+        <button mat-flat-button type="button" class="btnEditar" [routerLink]="['/editarCadastro', suino.id]">Editar</button>
         <button mat-flat-button type="button" class="btnDeletar" (click)="suino.id && deletarSuino(suino.id)">Deletar</button>
       </td>
     </tr>
