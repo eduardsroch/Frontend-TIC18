@@ -1,3 +1,9 @@
+img {
+    width: 150px;
+    height: 150px;
+    align-self: center;
+}
+
 .botoesNav {
     display: flex;
     flex-direction: row;
