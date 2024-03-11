@@ -1,0 +1,155 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f2f2f2;
+  transition: background-color 0.3s ease;
+  
+}
+
+body:hover {
+  background-color: #e6e6e6;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background:white;
+}
+
+.header {
+  background-color: #ffffff;
+  height: 80px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+}
+
+
+
+.header .logo {
+  font-size: 28px;
+  font-weight: bold;
+  color: #343a40;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.header .nav-links {
+  display: flex;
+  gap: 15px;
+}
+
+.header .nav-links a {
+  text-decoration: none;
+  color: #495057;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.header .nav-links a:hover {
+  color: #007bff;
+  transform: translateY(-2px);
+}
+
+.content {
+  flex: 1;
+  padding: 40px;
+  position: relative;
+  overflow-y: auto;
+  transition: padding 0.3s ease;
+}
+
+.content:hover {
+  padding: 50px;
+}
+
+.footer:hover {
+  background-color: #e2e2e2;
+}
+
+.footer p {
+  margin: 0;
+  color: #6c757d;
+  font-size: 16px;
+}
+
+.footer a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  transition: height 0.3s ease;
+}
+
+.search-container:hover {
+  height: 90vh;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 40px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.search-box:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.search-input {
+  border: none;
+  outline: none;
+  font-size: 20px;
+  padding: 15px;
+  flex: 1;
+}
+
+.search-button {
+  background-color: #4285f4;
+  border: none;
+  outline: none;
+  padding: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 40px;
+
+}
+
+.search-button:hover {
+  background-color: #3b79c2;
+}
+
+#gestao {
+  font-family: 'Arial', 'Helvetica', sans-serif;
+  text-align: center;
+  font-size: 24px;
+  transition: color 0.3s ease;
+}
+
+#gestao:hover {
+  color: #343a40;
+}
+
+
+button {
+  text-transform: uppercase;
+}
