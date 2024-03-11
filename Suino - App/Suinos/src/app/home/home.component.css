@@ -1,63 +1,57 @@
-.container{
-    background: linear-gradient(to bottom,#fdf0e5,#fdf0e5, #ffffff, #ffffff); 
-    padding: 20px;
-    margin-bottom: 70px;
+.container {
+    background: white;
+    padding: 15px;
+    margin-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 10px;
+    color: white;
+    font-size: 15px;
 }
-.container1{
+
+.container1, .container2 {
     display: flex;
-    flex-direction: row;
     justify-content: center;
     margin-top: 30px;
     margin-bottom: 20px;
 }
 
-.container2{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-   
+button {
+    width: 200px;
+    height: 100px;
+    background-color: #00cec9;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 10px;
 }
 
-button{
-    width: 200px;
-    height: 200px;
-    background-color: #d7b89c;
-    border: #d7b89c;
-    cursor: grab;
+button:hover {
+    background-color: #00b5b2;
 }
 
 .cadastroSuino {
     display: flex;
     align-items: center;
-    background-color: #d7b89c;
+    background-color: #00cec9;
     margin-right: 40px;
-    transition: transform 0.3s;
-}
-.cadastroSuino:hover {
-    transform: scale(1.1);
-    background-color: #feab8d;
-}
-button:hover{
-    background-color: #feab8d;
-}
-.cadastroSuino img :hover {
-    background-color: #feab8d;
+    transition: transform 0.3s, background-color 0.3s;
+    border-radius: 10px;
 }
 
-.cadastroSuino img {
-    width: 70px;
-    height: 100%;
-    object-fit: cover;
-    border-bottom-right-radius: 20px;
-    border-top-right-radius: 20px;
-    overflow: hidden;
+.cadastroSuino:hover {
+    transform: scale(1.1);
+    background-color: #00b5b2;
 }
 
 .cadastroSuino button {
     text-decoration: none;
     color: #15212a;
-    font-family: "Open Sans", sans-serif;
     font-size: 20px;
+    border: none;
+    cursor: pointer;
 }
 
-
+.container1 button,
+.container2 button {
+    margin-right: 10px;
+}

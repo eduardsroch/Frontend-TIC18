@@ -4,6 +4,7 @@ body {
   font-family: 'Arial', sans-serif;
   background-color: #f2f2f2;
   transition: background-color 0.3s ease;
+  
 }
 
 body:hover {
@@ -15,27 +16,23 @@ body:hover {
   height: 100%;
   display: flex;
   flex-direction: column;
-  background: linear-gradient(145deg, #e6e6e6, #ffffff);
+  background:white;
 }
 
 .header {
   background-color: #ffffff;
-  height: 80px; /* Aumentei a altura do header */
+  height: 80px;
   border-bottom: 1px solid #dee2e6;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 30px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease;
 }
 
-.header:hover {
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
+
 
 .header .logo {
-  font-size: 28px; /* Aumentei o tamanho da fonte do logo */
+  font-size: 28px;
   font-weight: bold;
   color: #343a40;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
@@ -59,14 +56,14 @@ body:hover {
 
 .content {
   flex: 1;
-  padding: 40px; /* Aumentei o padding para mais espaçamento */
+  padding: 40px;
   position: relative;
   overflow-y: auto;
   transition: padding 0.3s ease;
 }
 
 .content:hover {
-  padding: 50px; /* Aumentei o padding ao passar o mouse */
+  padding: 50px;
 }
 
 .footer {
@@ -88,7 +85,7 @@ body:hover {
 .footer p {
   margin: 0;
   color: #6c757d;
-  font-size: 16px; /* Ajustei o tamanho da fonte no rodapé */
+  font-size: 16px;
 }
 
 .footer a {
@@ -118,8 +115,8 @@ body:hover {
   display: flex;
   align-items: center;
   background-color: #fff;
-  border-radius: 40px; /* Aumentei a borda para um estilo mais arredondado */
-  padding: 20px; /* Aumentei o padding para mais espaçamento interno */
+  border-radius: 40px;
+  padding: 20px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   transition: box-shadow 0.3s ease;
 }
@@ -131,8 +128,8 @@ body:hover {
 .search-input {
   border: none;
   outline: none;
-  font-size: 20px; /* Aumentei o tamanho da fonte do input */
-  padding: 15px; /* Aumentei o padding para mais espaçamento interno */
+  font-size: 20px;
+  padding: 15px;
   flex: 1;
 }
 
@@ -140,12 +137,13 @@ body:hover {
   background-color: #4285f4;
   border: none;
   outline: none;
-  padding: 15px; /* Aumentei o padding para um visual mais destacado */
+  padding: 15px;
   cursor: pointer;
   transition: background-color 0.3s ease, color 0.3s ease;
   color: #fff;
   font-weight: bold;
-  border-radius: 40px; /* Aumentei a borda para um estilo mais arredondado */
+  border-radius: 40px;
+
 }
 
 .search-button:hover {
@@ -155,7 +153,7 @@ body:hover {
 #gestao {
   font-family: 'Arial', 'Helvetica', sans-serif;
   text-align: center;
-  font-size: 24px; /* Aumentei o tamanho da fonte no elemento com id "gestao" */
+  font-size: 24px;
   transition: color 0.3s ease;
 }
 
@@ -163,4 +161,7 @@ body:hover {
   color: #343a40;
 }
 
-/* ... (seu código posterior) ... */
+
+button {
+  text-transform: uppercase;
+}

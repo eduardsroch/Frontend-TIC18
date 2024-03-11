@@ -16,7 +16,7 @@ export class AutenticacaoComponent  implements OnInit {
   isLoading = false;
   error: string = '';
   isError: boolean = false;
-  public registerButtonText: string = 'Não tem uma conta? Registra-se';
+  public registerButtonText: string = 'CRIAR CONTA';
 
   constructor(private formBuilder: FormBuilder, private router: Router, private autenticaService: AutenticaService, private snackBar: MatSnackBar) { }
 
@@ -34,7 +34,7 @@ export class AutenticacaoComponent  implements OnInit {
     const { email, password } = this.loginForm.value;
     this.autenticaService.signupUser(email, password).subscribe(
       responseData => {
-        this.snackBar.open('Cadastro realizado com sucesso', 'Fechar', { duration: 3000 });
+        this.snackBar.open('Cadastro realizado com sucesso', 'FECHAR', { duration: 3000 });
         this.isLoading = false;
         this.isLogin = true;
         this.isError = false;
@@ -44,12 +44,12 @@ export class AutenticacaoComponent  implements OnInit {
         //console.log(error);
         switch (error.error.error.message) {
           case 'EMAIL_EXISTS':
-            this.error = 'O e-mail já está em uso.';
-            this.snackBar.open(this.error, 'Fechar', { duration: 3000 });
+            this.error = 'O e-mail já está Cadastrado.';
+            this.snackBar.open(this.error, 'FECHAR', { duration: 3000 });
             break;
           default:
             this.error = 'Ocorreu um erro ao cadastrar o usuário.'
-            this.snackBar.open(this.error, 'Fechar', { duration: 3000 });
+            this.snackBar.open(this.error, 'FECHAR', { duration: 3000 });
             break;
 
         }
@@ -67,7 +67,7 @@ export class AutenticacaoComponent  implements OnInit {
 
   redirectToLogin(): void {
     this.isLogin = !this.isLogin;
-    this.registerButtonText = 'Não tem uma conta? Registra-se';
+    this.registerButtonText = 'CRIAR CONTA';
   }
 
   login(): void {
@@ -87,12 +87,12 @@ export class AutenticacaoComponent  implements OnInit {
         error => {
           switch (error.error.error.message) {
             case 'INVALID_LOGIN_CREDENTIALS':
-              this.error = 'Credenciais inválidas. Tente novamente ou cadastre um usuário.';
-              this.snackBar.open(this.error, 'Fechar', { duration: 3000 });
+              this.error = 'Tente novamente ou cadastre um usuário.';
+              this.snackBar.open(this.error, 'FECHAR', { duration: 3000 });
               break;
             default:
               this.error = 'Ocorreu um erro ao cadastrar o usuário.'
-              this.snackBar.open(this.error, 'Fechar', { duration: 3000 });
+              this.snackBar.open(this.error, 'FECHAR', { duration: 3000 });
               break;
           }
         }

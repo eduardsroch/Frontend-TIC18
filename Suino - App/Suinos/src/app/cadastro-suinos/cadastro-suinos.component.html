@@ -1,9 +1,4 @@
-<div class="botoesNav">
-    <button mat-flat-button class="listagemSuino" title="Clique aqui para ver a listagem de suínos cadastrados" routerLink="/listar-suinos" routerLinkActive="active">LISTAGEM DE SUÍNOS</button>
-    <button mat-flat-button class="controlePeso" title="Clique aqui para acessar o controle de peso dos suínos">CONTROLE DE PESO (adicionar link)</button>
-    <button mat-flat-button class="cadastroPeso" title="Clique aqui para cadastrar um novo peso de suíno">CADASTRO DE PESO (adicionar link)</button>
-    <button mat-flat-button class="edicaoPeso" title="Clique aqui para editar o peso de um suíno cadastrado">EDIÇÃO DE PESO (adicionar link)</button>
-</div>
+
 <mat-card-content class="conteiner">
 <mat-card class="card-cadastro">
 
@@ -15,7 +10,7 @@
 <mat-card-content>
     <div *ngIf="formularioInvalido" class="error-message">
         <mat-error>
-            O formulário contém erros. Por favor, corrija-os antes de enviar.
+            O formulário contém erros.
         </mat-error>  
     </div>
 
