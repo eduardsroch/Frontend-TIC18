@@ -1,27 +1,38 @@
 /* app.component.css */
 :host {
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Para centralizar os componentes horizontalmente */
-  }
-  
-  input[type="file"] {
-    margin-bottom: 10px; /* Adicione margem inferior para separar o input dos outros componentes */
-  }
-  
-  .container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between; /* Para distribuir os componentes horizontalmente */
-    width: 100%; /* Para garantir que os componentes ocupem toda a largura disponível */
-  }
-  
-  /* Ajuste as propriedades conforme necessário para atender ao seu layout específico */
-  app-classes,
-  app-objetos,
-  app-propriedades,
-  app-valor-propriedade {
-    margin: 10px;
-    flex: 1;
-    max-width: 20%;
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Centralize verticalmente os componentes */
+  background-color: #f2f2f2; /* Defina uma cor de fundo */
+  padding: 20px; /* Adicione um espaçamento interno */
+}
+
+input[type="file"] {
+  margin-bottom: 10px;
+  border: none; /* Remova a borda do input */
+  background-color: #ffffff; /* Defina uma cor de fundo para o input */
+  padding: 10px; /* Adicione um espaçamento interno */
+  border-radius: 5px; /* Adicione bordas arredondadas */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adicione uma sombra */
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+app-classes,
+app-objetos,
+app-propriedades,
+app-valor-propriedade {
+  margin: 10px;
+  flex: 1;
+  max-width: 20%;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
