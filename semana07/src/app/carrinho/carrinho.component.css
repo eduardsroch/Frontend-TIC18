@@ -1,9 +1,10 @@
-.salvos{
+.salvos {
     display: flex;
-    gap:30px;
+    gap: 30px;
     margin-top: 10px;
     flex-wrap: wrap;
 }
-p{
+
+p {
     max-width: 100px;
 }
