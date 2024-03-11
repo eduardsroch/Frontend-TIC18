@@ -1,0 +1,61 @@
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+  <div class="field-container" *ngIf="!logginIn">
+    <label for="name"> Nome Completo: </label>
+    <input type="text" name="name" formControlName="name" />
+    <span
+      class="error"
+      *ngIf="form.get('name')?.invalid && form.get('name')?.touched"
+      >Nome inválido</span
+    >
+  </div>
+  <div class="field-container">
+    <label for="email"> Email: </label>
+    <input type="email" name="email" formControlName="email" />
+    <span
+      class="error"
+      *ngIf="form.get('email')?.invalid && form.get('email')?.touched"
+      >Email inválido</span
+    >
+  </div>
+  <div class="field-container">
+    <label for="password"> Senha: </label>
+    <input type="password" name="password" formControlName="password" />
+    <span
+      class="error"
+      *ngIf="form.get('password')?.invalid && form.get('password')?.touched"
+    >
+      Minimo de 6 caracteres Maximo de 20 caracteres
+    </span>
+  </div>
+  <div class="field-container" *ngIf="!logginIn">
+    <label for="confirmPassword"> Confirmar senha: </label>
+    <input
+      type="password"
+      name="confirmPassword"
+      formControlName="confirmPassword"
+    />
+    <span
+      class="error"
+      *ngIf="
+        form.get('confirmPassword')?.invalid &&
+        form.get('confirmPassword')?.touched
+      "
+      >Senha invalida</span
+    >
+    <span
+      class="error"
+      *ngIf="
+        form.get('confirmPassword')?.value != form.get('password')?.value &&
+        form.get('confirmPassword')?.touched &&
+        form.get('confirmPassword')?.valid
+      "
+    >
+      Senhas não conferem
+    </span>
+  </div>
+  <div class="button-submit">
+    <app-button-styled type="submit">
+      {{ logginIn ? "Login" : "Sign up" }}</app-button-styled
+    >
+  </div>
+</form>

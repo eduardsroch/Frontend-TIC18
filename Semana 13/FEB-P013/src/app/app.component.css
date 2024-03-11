@@ -1,0 +1,27 @@
+#content{
+    margin: 0 auto;
+    padding: 20px;
+    width: 75%;
+    background-color: white;
+
+}
+
+#router-content{
+    margin: auto;
+    width: 400px;
+    background-color: hsl(210, 50%, 87%);
+    padding: 20px 0;
+    border-radius: 20px;
+}
+
+footer{
+    background-color: rgb(255, 162, 55);
+    text-align: center;
+}
+
+#wrapper{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+    background-color: #e8ecf0;
+}

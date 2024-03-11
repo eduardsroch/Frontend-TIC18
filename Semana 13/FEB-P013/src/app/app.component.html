@@ -1,0 +1,16 @@
+<div id="wrapper">
+  <app-header
+    [isLogged]="logged"
+    (logout)="onLogout($event)"
+    (login)="onLogin($event)"
+    (signup)="onSignUp($event)"
+  ></app-header>
+  <div id="content">
+    <div id="router-content">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+  <footer>
+    desenvolvido por <a href="https://github.com/everaldina">everaldina</a>
+  </footer>
+</div>

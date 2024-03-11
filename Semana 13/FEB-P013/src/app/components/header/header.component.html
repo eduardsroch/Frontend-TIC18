@@ -1,0 +1,12 @@
+<header id="navbar">
+    <div id="menu">
+      <a routerLink="/cadastro" routerLinkActive="active">Cadastrar Consulta</a>
+      <a routerLink="/lista" routerLinkActive="active">Lista de Consultas</a>
+    </div>
+    <app-vertical-line></app-vertical-line>
+    <div id="login">
+      <app-button-styled *ngIf = "isLogged" (click)="emitLogout()">Sair</app-button-styled>
+      <app-button-styled *ngIf = "!isLogged" (click)="emitSignUp()">Inscrever </app-button-styled>
+      <app-button-styled *ngIf = "!isLogged" (click)="emitLogin()">Login</app-button-styled>
+    </div>
+  </header>

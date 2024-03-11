@@ -1,9 +1,27 @@
-# <img src="https://www.w3.org/html/logo/img/mark-word-icon.png" alt="Logo do HTML5" width="50" height="50" align="left"> MÓDULO FRONT END
-<hr>
-Este repositório é destinado ao módulo de FRONT END, onde desenvolveremos habilidades em Desenvolvimento WEB.
-CEPEDI 🌐 (https://www.cepedi.org.br/) Programa de Residência de Software. 
+# P014
 
-<h3>CONTATO</h3>
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.7.
 
-<h4>🧑🏾‍💻 Luis Eduardo B. Soares Rocha</h4>
-<h4>📧 e-mail: nixeo.dev@gmail.com.</h4>
+## Development server
+
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+
+## Code scaffolding
+
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+
+## Build
+
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+
+## Running unit tests
+
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+
+## Running end-to-end tests
+
+Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+
+## Further help
+
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
