@@ -5,6 +5,9 @@
     grid-template-columns: 1fr 1fr 20%;
     grid-gap: 10px;
     border: 1px solid #000;
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 5px;
 }
 
 .divisao2{
@@ -13,6 +16,9 @@
     grid-template-columns: 1fr 400px;
     grid-gap: 5px;  
     margin-top: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 5px;
 }
 header {
     font-family: 'Hedvig Letters Serif', serif;
@@ -22,6 +28,7 @@ header {
     text-align: center;
     border: 1px solid #000;
     color: rgb(1, 1, 1);
+    border-radius: 5px;
 }
 
 footer {
@@ -31,12 +38,14 @@ footer {
     text-align: center;
     border: 1px solid #000;
     color: rgba(5, 5, 5, 0.901);
+    border-radius: 5px;
 }
 
 .box{
     border: 1px solid #000;
-    
-    
+    background-color: #f2f2f2;
+    padding: 10px;
+    border-radius: 5px;
 }
 
 .destaque{
@@ -45,12 +54,18 @@ footer {
     margin-top: 10px;
     margin-bottom: 10px;
     row-gap: 10px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 5px;
 }
 .cabeçalho {
     font-size: 20px;
     font-weight: bold;
     color: #000;
     border: 1px solid #000;
+    background-color: #f2f2f2;
+    padding: 10px;
+    border-radius: 5px;
 }
 .imagens{
     display: grid;
@@ -58,12 +73,17 @@ footer {
     margin-top: 10px;
     margin-bottom: 10px;
     row-gap: 10px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 5px;
 }
 
 section{
     background-color: #fff;
     border: 1px solid #000;
     overflow: auto;
+    padding: 20px;
+    border-radius: 5px;
 }
 
 @media (max-width: 500px) {
