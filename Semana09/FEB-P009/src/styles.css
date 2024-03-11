@@ -1,2 +1,10 @@
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }  
+html, body {
+    height: 100%;
+    background-color: #f0f5ff; /* Light blue background color */
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    color: #333; /* Dark gray text color */
+}

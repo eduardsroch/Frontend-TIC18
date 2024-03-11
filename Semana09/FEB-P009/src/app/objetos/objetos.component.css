@@ -1,13 +1,27 @@
-div{
-    padding: 10px;
+div {
+    padding: 15px;
+    background-color: #f2f2f2; /* Cor de fundo */
+    border-radius: 5px; /* Borda arredondada */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
 }
-button{
+
+button {
     border-radius: 10px;
     height: 50px;
-    background-color: lightblue;
+    background-color: #3498db;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
-#Nome{
-    background-color: rgb(192, 10, 162);
-    color: white;
-    font-weight: bolder;
+
+button:hover {
+    background-color: #2980b9;
+}
+
+#Nome {
+    background-color: #c20aa2;
+    color: #fff;
+    font-weight: bold;
 }

@@ -1,19 +1,54 @@
-.container{
+.container {
     display: flex;
-    gap:30px;
-    margin-top: 10px;
+    gap: 30px;
+    margin-top: 20px;
     justify-content: center;
 }
-#add{
+
+#add {
     height: 50px;
     border-radius: 10px;
-    background-color: rgb(1, 255, 115);
+    background-color: #3498db; /* Azul sóbrio */
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-.grade{
+#add:hover {
+    background-color: #2980b9; /* Tom mais escuro de azul no hover */
+}
+
+.grade {
     margin-top: 10px;
     flex-direction: column;
     text-align: center;
     justify-content: center;
     align-items: center;
+    background-color: #f1f1f1; /* Fundo cinza claro */
+    color: #333; /* Cor de texto mais escura */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra mais suave */
 }
+
+/* BEGIN: Bonito e moderno nas tonalidades azul */
+.container {
+    background-color: #f5f8fa; /* Fundo azul claro */
+}
+
+#add {
+    background-color: #007bff; /* Azul brilhante */
+}
+
+#add:hover {
+    background-color: #0056b3; /* Tom mais escuro de azul no hover */
+}
+
+.grade {
+    background-color: #e8f0fe; /* Fundo azul claro */
+    color: #555; /* Cor de texto mais escura */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra mais suave */
+}
+/* END: Bonito e moderno nas tonalidades azul */
