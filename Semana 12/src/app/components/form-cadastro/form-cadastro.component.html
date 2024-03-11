@@ -1,0 +1,38 @@
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <label for="date">
+        Data da consulta:
+        <input type="date" name="date" formControlName="appointment_day">
+    </label>
+    <br>
+    <label for="tutor">
+        Nome do tutor:
+        <input type="text" name="tutor" formControlName="tutor_name">
+    </label>
+    <label for="name">
+        Nome do pet:
+        <input type="text" name="name" formControlName="pet_name">
+    </label>
+    <br>
+    <label for="type">
+        Tipo:
+        <select name="type" formControlName="pet_type">
+            <option value="dog">Cachorro</option>
+            <option value="cat">Gato</option>
+            <option value="bird">Pássaro</option>
+            <option value="rodent">Roedor</option>
+            <option value="reptile">Réptil</option>
+            <option value="fish">Peixe</option>
+        </select>
+    </label>
+    <br>
+    <label for="breed">
+        Raça:
+        <input type="text" name="breed" formControlName="pet_breed">
+    </label>
+    <label for="details">
+        Observação:
+        <textarea name="details" formControlName="details"></textarea>
+    </label>
+    <br>
+    <button type="submit">Enviar</button>
+</form>

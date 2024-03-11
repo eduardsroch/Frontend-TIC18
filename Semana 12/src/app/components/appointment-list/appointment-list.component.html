@@ -1,0 +1,13 @@
+<h1>Lista de Pets</h1>
+<div class="appointment-list">
+    <section *ngFor="let atendimento of listaAtendimentos">
+        <h2> {{ atendimento.appointment_day |  date:'shortDate'}} </h2>
+        <span> Tutor: {{ atendimento.tutor_name }} </span>
+        <span> | </span>
+        <span> Pet: {{ atendimento.pet_name }} </span>
+        <button (click)="detalharAtendimento(atendimento.id)">Detalhar</button>
+        <router-outlet></router-outlet>
+    </section>
+    <button>Editar</button>
+</div>
+
