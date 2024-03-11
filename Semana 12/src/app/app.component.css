@@ -1,0 +1,54 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+  }
+  
+  #content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  nav {
+    background-color: #3498db; /* Azul sóbrio */
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    margin: 0 15px;
+    transition: color 0.3s ease;
+  }
+  
+  nav a:hover {
+    color: #2980b9; /* Tom mais escuro de azul no hover */
+  }
+  
+  router-outlet {
+    margin-top: 20px;
+  }
+  
+  footer {
+    background-color: #2c3e50; /* Cinza azulado escuro */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  /* Adicionando estilo para links ativos */
+  .active {
+    font-weight: bold;
+    color: #3498db;
+  }
+  
