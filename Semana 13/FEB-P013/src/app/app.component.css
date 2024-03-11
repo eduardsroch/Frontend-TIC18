@@ -2,26 +2,30 @@
     margin: 0 auto;
     padding: 20px;
     width: 75%;
-    background-color: white;
-
+    background-color: #f2f5fa;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 #router-content{
     margin: auto;
     width: 400px;
-    background-color: hsl(210, 50%, 87%);
+    background-color: #e6f0ff;
     padding: 20px 0;
     border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 footer{
-    background-color: rgb(255, 162, 55);
+    background-color: #007bff;
+    color: white;
     text-align: center;
+    padding: 10px;
 }
 
 #wrapper{
     display: grid;
     grid-template-rows: auto 1fr auto;
     min-height: 100vh;
-    background-color: #e8ecf0;
+    background-color: #f2f5fa;
 }

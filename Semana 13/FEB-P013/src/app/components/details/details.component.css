@@ -1,5 +1,13 @@
-li{
+li {
     list-style-type: none;
     padding: 5px 0;
     color: rgb(54, 48, 48);
+    background-color: #f0f5ff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+li:hover {
+    background-color: #cfe2ff;
 }
