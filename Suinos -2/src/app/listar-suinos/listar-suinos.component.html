@@ -1,0 +1,94 @@
+<div *ngIf="loadedSuino.length < 1">
+  
+</div>
+
+<div class="filtros">
+  <mat-card-content>
+    <mat-card-title>
+      <h1 id="filtro">LISTAGEM DE SUÍNOS</h1>
+    </mat-card-title>
+    <mat-card>
+      <img src="assets\porco.png" alt="">
+      <div class="filter-row">
+        <mat-form-field class="form-field-half">
+          <mat-label for="filtroBrincoPai">Filtrar por brinco do pai:</mat-label>
+          <input matInput type="text" id="filtroBrincoPai" [(ngModel)]="filtroBrincoPai" (change)="aplicarFiltro()">
+        </mat-form-field>
+
+        <mat-form-field class="form-field-half">
+          <mat-label for="filtroBrincoMae">Filtrar por brinco da mãe:</mat-label>
+          <input matInput type="text" id="filtroBrincoMae" [(ngModel)]="filtroBrincoMae" (change)="aplicarFiltro()">
+        </mat-form-field>
+      </div>
+
+      <div class="filter-row">
+        <mat-form-field class="form-field-half">
+          <mat-label for="filtroDataNascimento">Filtrar por data de nascimento:</mat-label>
+          <input matInput type="date" id="filtroDataNascimento" [(ngModel)]="filtroDataNascimento" (change)="aplicarFiltro()">
+        </mat-form-field>
+
+        <mat-form-field class="form-field-half">
+          <mat-label for="filtroDataSaida">Filtrar por data de saída:</mat-label>
+          <input matInput type="date" id="filtroDataSaida" [(ngModel)]="filtroDataSaida" (change)="aplicarFiltro()">
+        </mat-form-field>
+      </div>
+
+      <div class="filter-row">
+        <mat-form-field class="form-field-half">
+          <mat-label for="filtroSexo">Filtrar por sexo:</mat-label>
+          <input matInput type="text" id="filtroSexo" [(ngModel)]="filtroSexo" (change)="aplicarFiltro()">
+        </mat-form-field>
+
+        <mat-form-field class="form-field-half">
+          <mat-label for="filtroStatus">Filtrar por status:</mat-label>
+          <input matInput type="text" id="filtroStatus" [(ngModel)]="filtroStatus" (change)="aplicarFiltro()">
+        </mat-form-field>
+      </div>
+
+      <button class='limpar' mat-raised-button (click)="limparFiltro()">Limpar Filtros</button>
+    </mat-card>
+  </mat-card-content>
+</div>
+
+
+<mat-card-content>
+  <mat-card-title>
+    Lista de Suínos Cadastrados
+  </mat-card-title>
+  <mat-card>
+
+
+<table class="tickets-table" *ngIf="loadedSuino.length >=1">
+  <thead>
+    <tr>
+      <th>Brinco do animal</th>
+      <th>Brinco do pai</th>
+      <th>Brinco da mãe</th>
+      <th>Data de nascimento</th>
+      <th>Data da saída</th>
+      <th>Status</th>
+      <th>Sexo do animal</th>
+      <th>Idade do animal</th>
+      <th>Ações</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let suino of loadedSuino">
+      <td>{{ suino.brincoAnimal }}</td>
+      <td>{{ suino.brincoPai }}</td>
+      <td>{{ suino.brincoMae }}</td>
+      <td>{{ suino.dataNascimento }}</td>
+      <td>{{ suino.dataSaida }}</td>
+      <td>{{ suino.status }}</td>
+      <td>{{ suino.sexo }}</td>
+      <td>{{ suino.dataNascimento | calcularIdade }}</td>
+      <td>
+        <button mat-flat-button type="button" class="btnEditar" [routerLink]="['/editarCadastro', suino.id]">Editar</button>
+        <button mat-flat-button type="button" class="btnDeletar" (click)="suino.id && deletarSuino(suino.id)">Deletar</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+</mat-card>
+</mat-card-content>
