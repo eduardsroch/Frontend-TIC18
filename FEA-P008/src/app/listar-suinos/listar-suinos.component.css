@@ -1,0 +1,124 @@
+img {
+    width: 150px;
+    height: 150px;
+    align-self: center;
+    margin: 0 auto;
+}
+
+div{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.botoesNav {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        justify-content: center;
+        transition: transform 0.3s;
+        background: linear-gradient(to right, #485563, #29323a);
+        border-radius: 10px; 
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+        padding: 10px; 
+    }
+    
+    .botoesNav button {
+        background-color: transparent;
+        color: #fff;
+        border: 2px solid #fff;
+        padding: 12px 20px;
+        border-radius: 8px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+    }
+    
+    .botoesNav button:hover {
+        transform: scale(1.05);
+        border-color: #8dfea7;
+        box-shadow: 0 0 0 2px rgba(141, 254, 167, 0.3);
+    }
+    
+    .tickets-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+        margin-bottom: 100px;
+    }
+    
+    .tickets-table th, .tickets-table td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+    }
+    
+    .tickets-table th {
+        background-color: #f2f2f2;
+        color: #333;
+    }
+    
+    .btnEditar, .btnDeletar {
+        transition: transform 0.3s;
+    }
+    
+    .btnEditar:hover, .btnDeletar:hover {
+        transform: scale(1.05);
+        border-color: #8dfea7;
+        box-shadow: 0 0 0 2px rgba(141, 254, 167, 0.3);
+    }
+    
+    .limpar {
+        margin-top: 20px;
+    }
+    
+    .limpar:hover {
+        transform: scale(1.1);
+        border-color: #8dfea7;
+        box-shadow: 0 0 0 2px rgba(141, 254, 167, 0.3);
+        
+    }
+    
+    .filter-row {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+    
+    .form-field-half {
+        flex: 1;
+    }
+    
+    .filter-row button {
+        width: 100%;
+    }
+    
+    #ListaS {
+        font-size: 20px;
+        text-transform: uppercase;
+        text-align: center;
+        color: #485563;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    #filtro {
+        font-size: 20px;
+        text-transform: uppercase;
+        text-align: center;
+        color: #485563;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    table {
+        text-transform: uppercase;
+        padding: 5px;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #485563;
+        color: #fff;
+    }
+
+    #filtro {
+        
+        text-transform: uppercase;
+        text-align: center;
+        color: #485563;
+        font-family: Arial, Helvetica, sans-serif;
+    }

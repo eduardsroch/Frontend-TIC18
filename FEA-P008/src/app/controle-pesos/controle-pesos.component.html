@@ -1,0 +1,33 @@
+
+<mat-card-content class="conteiner">
+<mat-card class="card-cadastro">
+
+<mat-card-title class="title">
+    Controle de peso de suínos
+</mat-card-title>
+<img src="assets\porco.png" alt="">
+<form [formGroup]="formSuinos" (ngSubmit)="onSubmit()" class="form-container">
+    <mat-card-content>
+        <div *ngIf="formularioInvalido" class="error-message">
+            <mat-error>
+                O formulário contém erros. Por favor, corrija-os antes de enviar.
+            </mat-error>  
+        </div>
+    
+        <div class="form-group"> 
+            <mat-form-field appearance="outline" class="form-field-full">
+                <mat-label for="suino">Suino número:</mat-label>
+                <mat-select id="suino" formControlName="suino">
+                    <mat-option *ngFor="let suino of suinos" [value]="suino">Id: {{suino.id}} - Brinco: {{suino.brincoAnimal}}</mat-option>
+                </mat-select> 
+            </mat-form-field>
+        </div> 
+    
+    
+    
+        <button mat-raised-button class="enviar" type="submit">Gerar gráfico</button>   
+    </mat-card-content>
+    </form>
+    <canvas id="myChart"></canvas>
+</mat-card> 
+</mat-card-content>
