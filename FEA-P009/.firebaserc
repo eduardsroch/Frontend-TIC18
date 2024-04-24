@@ -1,0 +1,9 @@
+{
+  "projects": {
+    "default": "suinos-cepedi-5ea02",
+    "firebse use": "app-suino-33049",
+    "firebase use": "suinos-cepedi-5ea02"
+  },
+  "targets": {},
+  "etags": {}
+}
