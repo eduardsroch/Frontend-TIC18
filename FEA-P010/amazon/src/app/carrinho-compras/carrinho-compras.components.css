@@ -2,24 +2,34 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: black; /* Mudança para fundo preto */
-    color: white; /* Mudança para texto branco */
+    color: white;
+    background-color: #f2f2f2; /* Adicione uma cor de fundo */
+    padding: 20px; /* Adicione um espaçamento interno */
+    border-radius: 10px; /* Adicione bordas arredondadas */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adicione uma sombra */
 }
 
 .subtotal-text {
     font-size: 1.2rem;
     font-weight: bold;
+    margin-bottom: 10px; /* Adicione um espaçamento inferior */
 }
 
 .subtotal-amount {
-    color: #007bff; /* Cor de destaque (azul) */
+    color: #007bff;
+    font-size: 1.5rem; /* Aumente o tamanho da fonte */
 }
 
 .custom-btn {
     font-weight: bold;
     border-radius: 0.5rem;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px; /* Adicione um espaçamento interno */
+    transition: background-color 0.3s ease; /* Adicione uma transição suave */
 }
 
 .custom-btn:hover {
     opacity: 0.8;
+    background-color: #0056b3; /* Altere a cor de destaque no hover */
 }
