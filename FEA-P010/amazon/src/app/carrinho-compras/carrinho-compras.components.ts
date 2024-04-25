@@ -28,7 +28,7 @@ export class CarrinhoComprasComponent implements OnInit {
       { Id: 3, Name: 'Fone de Ouvido', Price: 100, Quantity: 0, imgURL: 'https://m.media-amazon.com/images/I/51h6Ac2ILJL._AC_UF1000,1000_QL80_.jpg' },
       { Id: 4, Name: 'Relogio', Price: 1000, Quantity: 0, imgURL: 'https://cienciamodernaonline.vteximg.com.br/arquivos/ids/171418-400-400/51Z9dFrN97L._AC_SL1000_.jpg' },
       { Id: 5, Name: 'RTX 3080TI', Price: 21000, Quantity: 0, imgURL: 'https://www.nvidia.com/content/dam/en-zz/Solutions/geforce/ampere/rtx-3080-3080ti/geforce-rtx-3080-ti-product-gallery-thumbnail-267-3.jpg' },
-      { Id: 6, Name: 'Monitor Gamer Samsung Odyssey G5 34', Price: 3000, Quantity: 0, imgURL: 'https://images.kabum.com.br/produtos/fotos/155193/monitor-gamer-samsung-odyssey-g5-34-curvo-165hz-1ms-ultra-wqhd-hdmi-displayport-amd-freesync-premium-preto-lc34g55twwlxzd_1617796502_gg.jpg' },
+      { Id: 6, Name: 'Monitor Gamer', Price: 3000, Quantity: 0, imgURL: 'https://images.kabum.com.br/produtos/fotos/155193/monitor-gamer-samsung-odyssey-g5-34-curvo-165hz-1ms-ultra-wqhd-hdmi-displayport-amd-freesync-premium-preto-lc34g55twwlxzd_1617796502_gg.jpg' },
     ];
 
     // Inicializa a lista de itens no carrinho com os produtos

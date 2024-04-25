@@ -2,34 +2,54 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: white;
-    background-color: #f2f2f2; /* Adicione uma cor de fundo */
-    padding: 20px; /* Adicione um espaçamento interno */
-    border-radius: 10px; /* Adicione bordas arredondadas */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adicione uma sombra */
+    color: #007bff;
+    background-color: white;
+    padding: 5px; 
+    margin: 40px;
+    border-radius: 10px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    height: 700px;
+    width: 100%;
+    text-transform: uppercase;
+    font-family: Arial;
 }
 
 .subtotal-text {
     font-size: 1.2rem;
     font-weight: bold;
-    margin-bottom: 10px; /* Adicione um espaçamento inferior */
+    margin-bottom: 10px; 
+    text-transform: uppercase;
+    color: #007bff;
+    font-family: Arial, sans-serif;
 }
 
 .subtotal-amount {
     color: #007bff;
-    font-size: 1.5rem; /* Aumente o tamanho da fonte */
+    font-size: 20px; 
+    padding-bottom: 30px;
 }
 
 .custom-btn {
+    display: flex;
     font-weight: bold;
-    border-radius: 0.5rem;
+    border-radius: 5px;
     background-color: #007bff;
     color: white;
-    padding: 10px 20px; /* Adicione um espaçamento interno */
-    transition: background-color 0.3s ease; /* Adicione uma transição suave */
+    padding: 5px; 
+    margin: 10px;
+    transition: background-color 0.3s ease;
+    font-size: 15px; 
+    text-transform: uppercase;
+    font-family: Arial, sans-serif;
+    height: 30px;
 }
 
 .custom-btn:hover {
     opacity: 0.8;
-    background-color: #0056b3; /* Altere a cor de destaque no hover */
+    background-color: #230c8b; 
+}
+.img-fluid {
+    display: flex;
+    padding: 10px;
+    margin: 10px;
 }
