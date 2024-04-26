@@ -23,12 +23,12 @@ export class CarrinhoComprasComponent implements OnInit {
   ngOnInit(): void {
     // Exemplos de produtos
     const produtos: Item[] = [
-      { Id: 1, Name: 'Smartphone', Price: 1500, Quantity: 0, imgURL: 'https://imgs.casasbahia.com.br/55058035/1g.jpg' },
-      { Id: 2, Name: 'Notebook', Price: 2500, Quantity: 0, imgURL: 'https://www.havan.com.br/media/catalog/product/cache/73a52df140c4d19dbec2b6c485ea6a50/n/o/notebook-samsung-intel-celeron-4gb-ram-256gb-tela-de-15-6-w11-home_808259.jpg' },
-      { Id: 3, Name: 'Fone de Ouvido', Price: 100, Quantity: 0, imgURL: 'https://m.media-amazon.com/images/I/51h6Ac2ILJL._AC_UF1000,1000_QL80_.jpg' },
-      { Id: 4, Name: 'Relogio', Price: 1000, Quantity: 0, imgURL: 'https://cienciamodernaonline.vteximg.com.br/arquivos/ids/171418-400-400/51Z9dFrN97L._AC_SL1000_.jpg' },
-      { Id: 5, Name: 'RTX 3080TI', Price: 21000, Quantity: 0, imgURL: 'https://www.nvidia.com/content/dam/en-zz/Solutions/geforce/ampere/rtx-3080-3080ti/geforce-rtx-3080-ti-product-gallery-thumbnail-267-3.jpg' },
-      { Id: 6, Name: 'Monitor Gamer', Price: 3000, Quantity: 0, imgURL: 'https://images.kabum.com.br/produtos/fotos/155193/monitor-gamer-samsung-odyssey-g5-34-curvo-165hz-1ms-ultra-wqhd-hdmi-displayport-amd-freesync-premium-preto-lc34g55twwlxzd_1617796502_gg.jpg' },
+      { Id: 1, Name: 'Iphone 14', Price: 1500, Quantity: 0, imgURL: 'https://m.media-amazon.com/images/I/51PWxFNyyBL._AC_SL1000_.jpg' },
+      { Id: 2, Name: 'Notebook', Price: 2500, Quantity: 0, imgURL: 'https://m.media-amazon.com/images/I/51N6PRqw9kL._AC_SL1000_.jpg' },
+      { Id: 3, Name: 'Fone de bluetooth', Price: 100, Quantity: 0, imgURL: 'https://m.media-amazon.com/images/I/41qM+itS5SL._AC_SL1080_.jpg' },
+      { Id: 4, Name: 'Relogio Smart', Price: 1000, Quantity: 0, imgURL: 'https://m.media-amazon.com/images/I/71s7fVYV1kL._AC_SL1500_.jpg' },
+      { Id: 5, Name: 'Placa de VIdeo', Price: 21000, Quantity: 0, imgURL: 'https://m.media-amazon.com/images/I/81H-aYZrH5L._AC_SL1500_.jpg' },
+      { Id: 6, Name: 'MONITOR LG GAMER', Price: 3000, Quantity: 0, imgURL: 'https://m.media-amazon.com/images/I/612m4wK+uNL._AC_SL1200_.jpg' },
     ];
 
     // Inicializa a lista de itens no carrinho com os produtos
